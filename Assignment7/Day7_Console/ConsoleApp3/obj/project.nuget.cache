@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "8zpvaSV3kMZfs+VF23IRzxF0nKsY0QOidNlTOVVShzvZWoEelvLb4JwdgKSvraVlL4/0X6L0CrPoY4DMkQAUxg==",
+  "success": true,
+  "projectFilePath": "E:\\Antra\\Day7\\Day7_Console\\ConsoleApp3\\ConsoleApp3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yuant\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\yuant\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\yuant\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\yuant\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

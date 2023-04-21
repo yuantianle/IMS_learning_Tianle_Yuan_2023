@@ -1,0 +1,15 @@
+E:\Antra\Day7\Day7_Console\Day7_Console\bin\Debug\net6.0\Day7_Console.exe
+E:\Antra\Day7\Day7_Console\Day7_Console\bin\Debug\net6.0\Day7_Console.deps.json
+E:\Antra\Day7\Day7_Console\Day7_Console\bin\Debug\net6.0\Day7_Console.runtimeconfig.json
+E:\Antra\Day7\Day7_Console\Day7_Console\bin\Debug\net6.0\Day7_Console.dll
+E:\Antra\Day7\Day7_Console\Day7_Console\bin\Debug\net6.0\Day7_Console.pdb
+E:\Antra\Day7\Day7_Console\Day7_Console\obj\Debug\net6.0\Day7_Console.csproj.AssemblyReference.cache
+E:\Antra\Day7\Day7_Console\Day7_Console\obj\Debug\net6.0\Day7_Console.GeneratedMSBuildEditorConfig.editorconfig
+E:\Antra\Day7\Day7_Console\Day7_Console\obj\Debug\net6.0\Day7_Console.AssemblyInfoInputs.cache
+E:\Antra\Day7\Day7_Console\Day7_Console\obj\Debug\net6.0\Day7_Console.AssemblyInfo.cs
+E:\Antra\Day7\Day7_Console\Day7_Console\obj\Debug\net6.0\Day7_Console.csproj.CoreCompileInputs.cache
+E:\Antra\Day7\Day7_Console\Day7_Console\obj\Debug\net6.0\Day7_Console.dll
+E:\Antra\Day7\Day7_Console\Day7_Console\obj\Debug\net6.0\refint\Day7_Console.dll
+E:\Antra\Day7\Day7_Console\Day7_Console\obj\Debug\net6.0\Day7_Console.pdb
+E:\Antra\Day7\Day7_Console\Day7_Console\obj\Debug\net6.0\Day7_Console.genruntimeconfig.cache
+E:\Antra\Day7\Day7_Console\Day7_Console\obj\Debug\net6.0\ref\Day7_Console.dll
