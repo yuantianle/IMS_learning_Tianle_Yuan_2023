@@ -16,3 +16,4 @@ This is a repo for assignment sumbission from Tianle Yuan
 ## For HTML+CSS+JS (3ND week):
 - [Assignment 1](https://github.com/yuantianle/IMS_learning_Tianle_Yuan_2023/tree/main/Day14_html_css_js)
 - [Assignment 2](https://github.com/yuantianle/IMS_learning_Tianle_Yuan_2023/tree/main/Day15_Css)
+- [Assignment 3](https://github.com/yuantianle/IMS_learning_Tianle_Yuan_2023/tree/main/Day16_Javascript)
