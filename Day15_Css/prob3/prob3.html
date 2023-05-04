@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company News</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <style>
+/*   
+*{
+    outline: solid 1px red !important;
+    background-color: #000000 !important;
+    color: #fff !important;
+}*/
+    </style>
+
+</head>
+<body style="background-color: #eeeeee;">
+    <div style="background-image: url('bg.png'); text-align: right; height: 50px;">
+        <button style="border: 0px; margin: 10px; margin-right: 60px; color: aliceblue; background-color: orange;">Apply now</button>
+    </div>
+    <div class="container mt-5">
+        <p style="padding-top: 40px; color: rgb(3, 3, 70); font-weight: 500;">News</p>
+        <div id="news-container" class="d-flex flex-wrap justify-content-around">
+            <!-- News items will be appended here by JavaScript -->
+        </div>
+    
+        <!-- Pagination -->
+        <nav aria-label="News pagination" class="mt-4">
+            <ul id="pagination" class="pagination">
+                <!-- Pagination items will be appended here by JavaScript -->
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        // Sample data for demonstration purposes
+        const newsData = [
+            { title: 'LEVEL#0 Starts on the sth of', date: '18/01/2014', d1: 'Here is the first description', imageUrl:'p1.png', d2:'Here is the second description', Tags:'sd;ajsdkseionc;skjd' },
+            { title: 'LEVEL#1 Starts on the sth of', date: '18/02/2014', d1: 'Here is the first description', imageUrl:'p2.png', d2:'Here is the second description', Tags:'sd;ajsdkseionc;skjd' },
+            { title: 'LEVEL#2 Starts on the sth of', date: '18/03/2014', d1: 'Here is the first description', imageUrl:'p3.png', d2:'Here is the second description', Tags:'sd;ajsdkseionc;skjd' },
+            { title: 'LEVEL#3 Starts on the sth of', date: '18/04/2014', d1: 'Here is the first description', imageUrl:'p3.png', d2:'Here is the second description', Tags:'sd;ajsdkseionc;skjd' },
+            { title: 'LEVEL#4 Starts on the sth of', date: '18/05/2014', d1: 'Here is the first description', imageUrl:'p2.png', d2:'Here is the second description', Tags:'sd;ajsdkseionc;skjd' },
+            { title: 'LEVEL#5 Starts on the sth of', date: '18/06/2014', d1: 'Here is the first description', imageUrl:'p1.png', d2:'Here is the second description', Tags:'sd;ajsdkseionc;skjd' },
+            { title: 'LEVEL#6 Starts on the sth of', date: '18/07/2014', d1: 'Here is the first description', imageUrl:'p2.png', d2:'Here is the second description', Tags:'sd;ajsdkseionc;skjd' },
+            { title: 'LEVEL#7 Starts on the sth of', date: '18/08/2014', d1: 'Here is the first description', imageUrl:'p1.png', d2:'Here is the second description', Tags:'sd;ajsdkseionc;skjd' },
+            { title: 'LEVEL#8 Starts on the sth of', date: '18/09/2014', d1: 'Here is the first description', imageUrl:'p3.png', d2:'Here is the second description', Tags:'sd;ajsdkseionc;skjd' }
+        ];
+    
+        const newsPerPage = 3;
+        let currentPage = 1;
+    
+        function displayNews(page) {
+            const startIndex = (page - 1) * newsPerPage;
+            const endIndex = startIndex + newsPerPage;
+            const newsToDisplay = newsData.slice(startIndex, endIndex);
+    
+            const newsContainer = document.getElementById('news-container');
+            newsContainer.innerHTML = ''; // Clear previous news items
+    
+            newsToDisplay.forEach((news) => {
+                const newsItem = `
+                    <article class="card col-xs-3 well" style="border-radius: 0; width: 300px; height: 350px; margin-bottom: 20px;" >
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(3, 3, 70);">${news.title}</h5>
+                            <p class="card-text" style="text-align: right;">${news.date}</p>
+                            <p class="card-text">${news.d1}</p>
+                            <p class="card-text"><img src="${news.imageUrl}" alt="Image description" class="img-responsive"></p>
+                            <p class="card-text">${news.d2}</p>
+                            <Table><td>Tags:</td><td class="card-text">${news.Tags}</td>
+                        </div>
+                    </article>
+                `;
+                newsContainer.innerHTML += newsItem;
+            });
+        }
+    
+        function displayPagination() {
+            const totalPages = Math.ceil(newsData.length / newsPerPage);
+    
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = ''; // Clear previous pagination items
+    
+            for (let i = 1; i <= totalPages; i++) {
+                const pageItem = `
+                    <li class="page-item${i === currentPage ? ' active' : ''}" >
+                        <a style="background-color:#3c9fdb; color: white" class="page-link" href="#" onclick="changePage(${i})">${i}</a>
+                    </li>
+                `;
+                pagination.innerHTML += pageItem;
+            }
+        }
+    
+        function changePage(page) {
+            currentPage = page;
+            displayNews(currentPage);
+            displayPagination();
+        }
+    
+        // Initialize the news display and pagination
+        displayNews(currentPage);
+        displayPagination();
+    </script>
+    
+</body>
+</html>
+    

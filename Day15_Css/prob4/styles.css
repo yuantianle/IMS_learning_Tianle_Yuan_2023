@@ -1,0 +1,200 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1{
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 300px!important; 
+    font-size: 50px!important;
+}
+h2{
+    color: #97ad1a;
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.header-image {
+    background-image: url(bg.png);
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.header-image h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 120px;
+}
+
+.header-text {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+nav {
+    background: linear-gradient(to bottom, #eef5e9, #dcdcdc);
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav li.active a {
+    color: #fff;
+    background-color: #b7b7b7;
+}
+
+nav a {
+    color: #363131;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Main Content */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.left-column {
+    flex-basis: 60%;
+    margin-right: 40px;
+}
+
+.right-column {
+    flex-basis: 40%;
+}
+
+.product-row {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.product-image {
+    flex-basis: 30%;
+}
+
+.product-image img {
+    width: 100%;
+}
+
+.product-details {
+    flex-basis: 70%;
+}
+
+.product-details h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.product-details p {
+    margin: 10px 0;
+}
+
+.news-item {
+    margin-bottom: 40px;
+}
+
+.news-date {
+    color: #999;
+    font-size: 14px;
+    margin: 0;
+}
+
+.news-description {
+    margin: 10px 0;
+}
+
+.news-more {
+    margin: 10px 0;
+}
+
+.message-item {
+    margin-bottom: 40px;
+}
+
+.message-date {
+    color: #999;
+    font-size: 14px;
+    margin: 0;
+}
+
+.message-details {
+    margin: 10px 0;
+}
+
+.see-all {
+    margin-top: 20px;
+}
+
+table{
+    border: #000000 1px solid;
+}
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    background: linear-gradient(to bottom, #a5d831, #93c01b);
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #999;
+}
+
+footer a:hover {
+    color: #fff;
+}
